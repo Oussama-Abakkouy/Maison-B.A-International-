@@ -12,10 +12,12 @@ const Gallery = () => {
   const images = [
     { src: img1, alt: "Film Production" }, //
     { src: img2, alt: "Audiovisual Production" },
-    { src: img3, alt: "Import & Export Services" },
+    { src: img3, alt: "Hotels entertainment" },
     { src: img4, alt: "Premium Event Design" },
     { src: img5, alt: "Film Production" },
     { src: img6, alt: "Hospitality Products" },
+    // { src: img5, alt: "team building" },
+    // { src: img6, alt: "hotels entertainment" },
   ];
 
   return (

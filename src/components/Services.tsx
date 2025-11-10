@@ -1,8 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, Video, Package } from "lucide-react";
+import { Calendar, Video, Sparkles, Hotel } from "lucide-react";
 import eventImage from "@/assets/hero-luxury-event.jpg";
 import audiovisualImage from "@/assets/audiovisual-production.jpg";
-import importExportImage from "@/assets/import-export-luxury.jpg";
+import performanceImage from "@/assets/performance-luxury.jpg";
+import hotelsImage from "@/assets/hotels-entertainment.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Services = () => {
@@ -23,11 +24,18 @@ const Services = () => {
       image: audiovisualImage,
     },
     {
-      icon: Package,
-      title: "Import & Export",
-      description: "Tailor-made hospitality products, personalized hotel items, leisure and entertainment materials, delivered worldwide.",
-      details: "Premium hospitality solutions connecting Morocco, Turkey, and Europe with bespoke products and seamless logistics.",
-      image: importExportImage,
+      icon: Sparkles,
+      title: "Performance",
+      description: "Professional stage management, live entertainment, and spectacular performances tailored to your vision.",
+      details: "From concerts to theatrical productions, we deliver world-class performances with state-of-the-art production and flawless execution.",
+      image: performanceImage,
+    },
+    {
+      icon: Hotel,
+      title: "Hotels Entertainment",
+      description: "Bespoke entertainment solutions for luxury hotels, creating unforgettable guest experiences.",
+      details: "Curated entertainment programs, live performances, and exclusive events that elevate the hospitality experience to new heights.",
+      image: hotelsImage,
     },
   ];
 
@@ -39,11 +47,11 @@ const Services = () => {
             Our <span className="text-gradient-gold">Expertise</span>
           </h2>
           <p className="text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
-            Three distinct domains, one unified vision of excellence. Operating between Morocco, Turkey, and Europe, we connect innovation and luxury.
+            Four distinct domains, one unified vision of excellence. Operating between Morocco, Turkey, and Europe, we connect innovation and luxury.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <Card 
               key={index} 
